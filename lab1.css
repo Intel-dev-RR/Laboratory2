@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 40px;
+  border: 8px solid #222;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header .sub {
+  font-size: 1.1em;
+  color: #666;
+  margin: 8px 0 16px;
+}
+
+header .logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  clip-path: polygon(
+    50% 0%, 93% 25%, 93% 75%, 
+    50% 100%, 7% 75%, 7% 25%
+  );
+}
+
+/* Contact & Portfolio */
+.info_top {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd; 
+}
+
+.info_top > .contact,
+.info_top > .portfolio {
+  flex: 1;
+  font-size: 0.85em;   
+  line-height: 1.4;
+}
+
+.info_top > .contact {
+  text-align: right;   
+  padding-right: 10px; 
+}
+
+.info_top > .portfolio {
+  text-align: left;    
+  padding-left: 10px;  
+}
+
+.vline {
+  width: 1px;
+  background: #6f6e6e;
+  margin: 0;       
+}
+
+/* Section Titles */
+section {
+  margin: 30px 0;
+}
+
+section h2 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;        
+  margin-bottom: 10px;
+  border-bottom: none; 
+  }
+
+section h2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #ddd;
+}
+
+/* Experience & Education Layout */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 0.90em;
+}
+
+/* Left side: job/degree title + date stacked vertically */
+.left_side {
+  width: 25%;
+}
+
+.left_side h3 {
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.left_side span {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Right side: company + description */
+.right_side {
+  width: 70%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.item .company {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.item .desc {
+  font-size: 0.9em;
+  color: #444;
+  text-align: justify;
+}
+
+/* Skills and Awards layout */
+.info_bottom {
+  display: flex;
+  gap: 40px;
+  font-size: 0.8em;
+}
+
+.skills ul {
+  list-style: none;
+  margin-top: 6px;
+  text-align: right;
+
+}
+
+.awards {
+  position: relative;
+  padding-left: 260px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 40px;
+  border: 8px solid #222;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header .sub {
+  font-size: 1.1em;
+  color: #666;
+  margin: 8px 0 16px;
+}
+
+header .logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  clip-path: polygon(
+    50% 0%, 93% 25%, 93% 75%, 
+    50% 100%, 7% 75%, 7% 25%
+  );
+}
+
+/* Contact & Portfolio */
+.info_top {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd; 
+}
+
+.info_top > .contact,
+.info_top > .portfolio {
+  flex: 1;
+  font-size: 0.85em;   
+  line-height: 1.4;
+}
+
+.info_top > .contact {
+  text-align: right;   
+  padding-right: 10px; 
+}
+
+.info_top > .portfolio {
+  text-align: left;    
+  padding-left: 10px;  
+}
+
+.vline {
+  width: 1px;
+  background: #6f6e6e;
+  margin: 0;       
+}
+
+/* Section Titles */
+section {
+  margin: 30px 0;
+}
+
+section h2 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;        
+  margin-bottom: 10px;
+  border-bottom: none; 
+  }
+
+section h2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #ddd;
+}
+
+/* Experience & Education Layout */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 0.90em;
+}
+
+/* Left side: job/degree title + date stacked vertically */
+.left_side {
+  width: 25%;
+}
+
+.left_side h3 {
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.left_side span {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Right side: company + description */
+.right_side {
+  width: 70%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.item .company {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.item .desc {
+  font-size: 0.9em;
+  color: #444;
+  text-align: justify;
+}
+
+/* Skills and Awards layout */
+.info_bottom {
+  display: flex;
+  gap: 40px;
+  font-size: 0.8em;
+}
+
+.skills ul {
+  list-style: none;
+  margin-top: 6px;
+  text-align: right;
+
+}
+
+.awards {
+  position: relative;
+  padding-left: 260px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
